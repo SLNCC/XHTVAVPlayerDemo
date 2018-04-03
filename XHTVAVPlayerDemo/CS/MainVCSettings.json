@@ -1,0 +1,19 @@
+[
+ {
+    "vcName": "NTVAVPlayerViewController",
+    "title": "AVPlayerVC",
+    "imageName": "AVPlayerVC"
+ },
+
+ {
+ "vcName": "NTVMPMoviePlayerController",
+ "title": "MPMoviePlayerC",
+ "imageName": "MPMoviePlayerC"
+ },
+ {
+ "vcName": "NTVAVPlayerController",
+ "title": "AVPlayer",
+ "imageName": "AVPlayer"
+ },
+ 
+ ]

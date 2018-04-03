@@ -1,0 +1,838 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D83CCD8820720E4B0069B397 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCD8720720E4B0069B397 /* AppDelegate.m */; };
+		D83CCD8E20720E4B0069B397 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CCD8C20720E4B0069B397 /* Main.storyboard */; };
+		D83CCD9020720E4B0069B397 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83CCD8F20720E4B0069B397 /* Assets.xcassets */; };
+		D83CCD9320720E4B0069B397 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83CCD9120720E4B0069B397 /* LaunchScreen.storyboard */; };
+		D83CCD9620720E4B0069B397 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCD9520720E4B0069B397 /* main.m */; };
+		D83CCDA020720E4B0069B397 /* XHTVAVPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCD9F20720E4B0069B397 /* XHTVAVPlayerDemoTests.m */; };
+		D83CCDAB20720E4B0069B397 /* XHTVAVPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDAA20720E4B0069B397 /* XHTVAVPlayerDemoUITests.m */; };
+		D83CCDD320720EA50069B397 /* SLNAppDelegateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDB920720EA40069B397 /* SLNAppDelegateTool.m */; };
+		D83CCDD420720EA50069B397 /* KRVideoPlayerControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDBD20720EA40069B397 /* KRVideoPlayerControlView.m */; };
+		D83CCDD520720EA50069B397 /* KRVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D83CCDBE20720EA40069B397 /* KRVideoPlayer.bundle */; };
+		D83CCDD620720EA50069B397 /* KRVideoPlayer.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83CCDC120720EA40069B397 /* KRVideoPlayer.xcassets */; };
+		D83CCDD720720EA50069B397 /* KRVideoPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDC220720EA40069B397 /* KRVideoPlayerController.m */; };
+		D83CCDD820720EA50069B397 /* NTVMPMoviePlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDC420720EA50069B397 /* NTVMPMoviePlayerController.m */; };
+		D83CCDD920720EA50069B397 /* NTVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDC520720EA50069B397 /* NTVTabBarController.m */; };
+		D83CCDDA20720EA50069B397 /* NTVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDC820720EA50069B397 /* NTVNavigationController.m */; };
+		D83CCDDB20720EA50069B397 /* MainVCSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = D83CCDCA20720EA50069B397 /* MainVCSettings.json */; };
+		D83CCDDC20720EA50069B397 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDCB20720EA50069B397 /* ViewController.m */; };
+		D83CCDDD20720EA50069B397 /* NTVAVPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDCF20720EA50069B397 /* NTVAVPlayerViewController.m */; };
+		D83CCDDE20720EA50069B397 /* NTVAVPlayerController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDD020720EA50069B397 /* NTVAVPlayerController.m */; };
+		D83CCDDF20720EA50069B397 /* NTVBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCDD220720EA50069B397 /* NTVBaseViewController.m */; };
+		D83CCE45207213840069B397 /* UINavigationBar+NTVNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE27207213810069B397 /* UINavigationBar+NTVNavBar.m */; };
+		D83CCE46207213840069B397 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE2B207213820069B397 /* UIView+Frame.m */; };
+		D83CCE47207213840069B397 /* UICollectionView+NoNetworkCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE2D207213820069B397 /* UICollectionView+NoNetworkCollectionView.m */; };
+		D83CCE48207213840069B397 /* NSDate+SLDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE2E207213820069B397 /* NSDate+SLDate.m */; };
+		D83CCE49207213840069B397 /* UITextField+NTVTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE2F207213820069B397 /* UITextField+NTVTextField.m */; };
+		D83CCE4A207213840069B397 /* UIColor+HexString.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE31207213820069B397 /* UIColor+HexString.m */; };
+		D83CCE4B207213840069B397 /* MBProgressHUD+NTVMBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE34207213820069B397 /* MBProgressHUD+NTVMBProgressHUD.m */; };
+		D83CCE4C207213840069B397 /* UITableView+NoNetworkTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE39207213830069B397 /* UITableView+NoNetworkTableView.m */; };
+		D83CCE4D207213840069B397 /* UIView+NTVView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE3A207213830069B397 /* UIView+NTVView.m */; };
+		D83CCE4E207213840069B397 /* UIBarButtonItem+SLItem.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE3C207213830069B397 /* UIBarButtonItem+SLItem.m */; };
+		D83CCE4F207213840069B397 /* UITableView+NTVTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE3E207213830069B397 /* UITableView+NTVTableView.m */; };
+		D83CCE50207213840069B397 /* UINavigationController+NTVNavigationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE3F207213840069B397 /* UINavigationController+NTVNavigationVC.m */; };
+		D83CCE51207213840069B397 /* NSObject+LocalCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE40207213840069B397 /* NSObject+LocalCache.m */; };
+		D83CCE52207213840069B397 /* NSString+NTVString.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE41207213840069B397 /* NSString+NTVString.m */; };
+		D83CCE53207213840069B397 /* UIImageView+NTVImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE42207213840069B397 /* UIImageView+NTVImageView.m */; };
+		D83CCE54207213840069B397 /* UINavigationController+NTVNavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE43207213840069B397 /* UINavigationController+NTVNavAlpha.m */; };
+		D83CCE56207213FD0069B397 /* UIViewController+NTVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE55207213FC0069B397 /* UIViewController+NTVViewController.m */; };
+		DE19BCC9FABCAEEB645302DB /* libPods-XHTVAVPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D823031A188C246D77FE23 /* libPods-XHTVAVPlayerDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D83CCD9C20720E4B0069B397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83CCD7B20720E4B0069B397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83CCD8220720E4B0069B397;
+			remoteInfo = XHTVAVPlayerDemo;
+		};
+		D83CCDA720720E4B0069B397 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D83CCD7B20720E4B0069B397 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83CCD8220720E4B0069B397;
+			remoteInfo = XHTVAVPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		17AA09078DF3AB2180CDF365 /* Pods-XHTVAVPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHTVAVPlayerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XHTVAVPlayerDemo/Pods-XHTVAVPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		44D823031A188C246D77FE23 /* libPods-XHTVAVPlayerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XHTVAVPlayerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A9B9407F07DB0A61405F4FA /* Pods-XHTVAVPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XHTVAVPlayerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-XHTVAVPlayerDemo/Pods-XHTVAVPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D83CCD8320720E4B0069B397 /* XHTVAVPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XHTVAVPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CCD8620720E4B0069B397 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D83CCD8720720E4B0069B397 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D83CCD8D20720E4B0069B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D83CCD8F20720E4B0069B397 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83CCD9220720E4B0069B397 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D83CCD9420720E4B0069B397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83CCD9520720E4B0069B397 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D83CCD9B20720E4B0069B397 /* XHTVAVPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHTVAVPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CCD9F20720E4B0069B397 /* XHTVAVPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHTVAVPlayerDemoTests.m; sourceTree = "<group>"; };
+		D83CCDA120720E4B0069B397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83CCDA620720E4B0069B397 /* XHTVAVPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XHTVAVPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83CCDAA20720E4B0069B397 /* XHTVAVPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XHTVAVPlayerDemoUITests.m; sourceTree = "<group>"; };
+		D83CCDAC20720E4B0069B397 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83CCDB920720EA40069B397 /* SLNAppDelegateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLNAppDelegateTool.m; sourceTree = "<group>"; };
+		D83CCDBB20720EA40069B397 /* SLNAppDelegateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLNAppDelegateTool.h; sourceTree = "<group>"; };
+		D83CCDBD20720EA40069B397 /* KRVideoPlayerControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerControlView.m; sourceTree = "<group>"; };
+		D83CCDBE20720EA40069B397 /* KRVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = KRVideoPlayer.bundle; sourceTree = "<group>"; };
+		D83CCDBF20720EA40069B397 /* KRVideoPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerController.h; sourceTree = "<group>"; };
+		D83CCDC020720EA40069B397 /* KRVideoPlayerControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KRVideoPlayerControlView.h; sourceTree = "<group>"; };
+		D83CCDC120720EA40069B397 /* KRVideoPlayer.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = KRVideoPlayer.xcassets; sourceTree = "<group>"; };
+		D83CCDC220720EA40069B397 /* KRVideoPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KRVideoPlayerController.m; sourceTree = "<group>"; };
+		D83CCDC420720EA50069B397 /* NTVMPMoviePlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTVMPMoviePlayerController.m; sourceTree = "<group>"; };
+		D83CCDC520720EA50069B397 /* NTVTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTVTabBarController.m; sourceTree = "<group>"; };
+		D83CCDC620720EA50069B397 /* NTVAVPlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTVAVPlayerController.h; sourceTree = "<group>"; };
+		D83CCDC720720EA50069B397 /* NTVAVPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTVAVPlayerViewController.h; sourceTree = "<group>"; };
+		D83CCDC820720EA50069B397 /* NTVNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTVNavigationController.m; sourceTree = "<group>"; };
+		D83CCDC920720EA50069B397 /* NTVBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTVBaseViewController.h; sourceTree = "<group>"; };
+		D83CCDCA20720EA50069B397 /* MainVCSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MainVCSettings.json; sourceTree = "<group>"; };
+		D83CCDCB20720EA50069B397 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D83CCDCC20720EA50069B397 /* NTVMPMoviePlayerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTVMPMoviePlayerController.h; sourceTree = "<group>"; };
+		D83CCDCD20720EA50069B397 /* NTVTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTVTabBarController.h; sourceTree = "<group>"; };
+		D83CCDCE20720EA50069B397 /* NTVNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTVNavigationController.h; sourceTree = "<group>"; };
+		D83CCDCF20720EA50069B397 /* NTVAVPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTVAVPlayerViewController.m; sourceTree = "<group>"; };
+		D83CCDD020720EA50069B397 /* NTVAVPlayerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTVAVPlayerController.m; sourceTree = "<group>"; };
+		D83CCDD120720EA50069B397 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D83CCDD220720EA50069B397 /* NTVBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTVBaseViewController.m; sourceTree = "<group>"; };
+		D83CCDE020720EEF0069B397 /* XHTVAVPlayerDemo.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XHTVAVPlayerDemo.pch; sourceTree = "<group>"; };
+		D83CCE24207213810069B397 /* MBProgressHUD+NTVMBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+NTVMBProgressHUD.h"; sourceTree = "<group>"; };
+		D83CCE25207213810069B397 /* UIBarButtonItem+SLItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+SLItem.h"; sourceTree = "<group>"; };
+		D83CCE26207213810069B397 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
+		D83CCE27207213810069B397 /* UINavigationBar+NTVNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+NTVNavBar.m"; sourceTree = "<group>"; };
+		D83CCE28207213810069B397 /* UIImageView+NTVImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+NTVImageView.h"; sourceTree = "<group>"; };
+		D83CCE29207213810069B397 /* NSDate+SLDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+SLDate.h"; sourceTree = "<group>"; };
+		D83CCE2A207213810069B397 /* NSObject+LocalCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+LocalCache.h"; sourceTree = "<group>"; };
+		D83CCE2B207213820069B397 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		D83CCE2C207213820069B397 /* UICollectionView+NoNetworkCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+NoNetworkCollectionView.h"; sourceTree = "<group>"; };
+		D83CCE2D207213820069B397 /* UICollectionView+NoNetworkCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+NoNetworkCollectionView.m"; sourceTree = "<group>"; };
+		D83CCE2E207213820069B397 /* NSDate+SLDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+SLDate.m"; sourceTree = "<group>"; };
+		D83CCE2F207213820069B397 /* UITextField+NTVTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+NTVTextField.m"; sourceTree = "<group>"; };
+		D83CCE30207213820069B397 /* NSString+NTVString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+NTVString.h"; sourceTree = "<group>"; };
+		D83CCE31207213820069B397 /* UIColor+HexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HexString.m"; sourceTree = "<group>"; };
+		D83CCE32207213820069B397 /* UIColor+HexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HexString.h"; sourceTree = "<group>"; };
+		D83CCE33207213820069B397 /* UITableView+NoNetworkTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NoNetworkTableView.h"; sourceTree = "<group>"; };
+		D83CCE34207213820069B397 /* MBProgressHUD+NTVMBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+NTVMBProgressHUD.m"; sourceTree = "<group>"; };
+		D83CCE35207213830069B397 /* UITextField+NTVTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+NTVTextField.h"; sourceTree = "<group>"; };
+		D83CCE36207213830069B397 /* UINavigationController+NTVNavAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NTVNavAlpha.h"; sourceTree = "<group>"; };
+		D83CCE37207213830069B397 /* UINavigationController+NTVNavigationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+NTVNavigationVC.h"; sourceTree = "<group>"; };
+		D83CCE38207213830069B397 /* UIView+NTVView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+NTVView.h"; sourceTree = "<group>"; };
+		D83CCE39207213830069B397 /* UITableView+NoNetworkTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NoNetworkTableView.m"; sourceTree = "<group>"; };
+		D83CCE3A207213830069B397 /* UIView+NTVView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+NTVView.m"; sourceTree = "<group>"; };
+		D83CCE3B207213830069B397 /* UITableView+NTVTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+NTVTableView.h"; sourceTree = "<group>"; };
+		D83CCE3C207213830069B397 /* UIBarButtonItem+SLItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+SLItem.m"; sourceTree = "<group>"; };
+		D83CCE3D207213830069B397 /* UIViewController+NTVViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+NTVViewController.h"; sourceTree = "<group>"; };
+		D83CCE3E207213830069B397 /* UITableView+NTVTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+NTVTableView.m"; sourceTree = "<group>"; };
+		D83CCE3F207213840069B397 /* UINavigationController+NTVNavigationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NTVNavigationVC.m"; sourceTree = "<group>"; };
+		D83CCE40207213840069B397 /* NSObject+LocalCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+LocalCache.m"; sourceTree = "<group>"; };
+		D83CCE41207213840069B397 /* NSString+NTVString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+NTVString.m"; sourceTree = "<group>"; };
+		D83CCE42207213840069B397 /* UIImageView+NTVImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+NTVImageView.m"; sourceTree = "<group>"; };
+		D83CCE43207213840069B397 /* UINavigationController+NTVNavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NTVNavAlpha.m"; sourceTree = "<group>"; };
+		D83CCE44207213840069B397 /* UINavigationBar+NTVNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NTVNavBar.h"; sourceTree = "<group>"; };
+		D83CCE55207213FC0069B397 /* UIViewController+NTVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NTVViewController.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83CCD8020720E4B0069B397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE19BCC9FABCAEEB645302DB /* libPods-XHTVAVPlayerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CCD9820720E4B0069B397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CCDA320720E4B0069B397 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4915A49667F651D0FC8C2854 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				17AA09078DF3AB2180CDF365 /* Pods-XHTVAVPlayerDemo.debug.xcconfig */,
+				5A9B9407F07DB0A61405F4FA /* Pods-XHTVAVPlayerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		556CB13BCDF48675FFEA8545 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D823031A188C246D77FE23 /* libPods-XHTVAVPlayerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D83CCD7A20720E4B0069B397 = {
+			isa = PBXGroup;
+			children = (
+				D83CCD8520720E4B0069B397 /* XHTVAVPlayerDemo */,
+				D83CCD9E20720E4B0069B397 /* XHTVAVPlayerDemoTests */,
+				D83CCDA920720E4B0069B397 /* XHTVAVPlayerDemoUITests */,
+				D83CCD8420720E4B0069B397 /* Products */,
+				4915A49667F651D0FC8C2854 /* Pods */,
+				556CB13BCDF48675FFEA8545 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D83CCD8420720E4B0069B397 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCD8320720E4B0069B397 /* XHTVAVPlayerDemo.app */,
+				D83CCD9B20720E4B0069B397 /* XHTVAVPlayerDemoTests.xctest */,
+				D83CCDA620720E4B0069B397 /* XHTVAVPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D83CCD8520720E4B0069B397 /* XHTVAVPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCDE020720EEF0069B397 /* XHTVAVPlayerDemo.pch */,
+				D83CCDC320720EA50069B397 /* CS */,
+				D83CCDBC20720EA40069B397 /* KRVideoPlayer */,
+				D83CCDB820720EA40069B397 /* Tool */,
+				D83CCD8620720E4B0069B397 /* AppDelegate.h */,
+				D83CCD8720720E4B0069B397 /* AppDelegate.m */,
+				D83CCD8C20720E4B0069B397 /* Main.storyboard */,
+				D83CCD8F20720E4B0069B397 /* Assets.xcassets */,
+				D83CCD9120720E4B0069B397 /* LaunchScreen.storyboard */,
+				D83CCD9420720E4B0069B397 /* Info.plist */,
+				D83CCD9520720E4B0069B397 /* main.m */,
+			);
+			path = XHTVAVPlayerDemo;
+			sourceTree = "<group>";
+		};
+		D83CCD9E20720E4B0069B397 /* XHTVAVPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCD9F20720E4B0069B397 /* XHTVAVPlayerDemoTests.m */,
+				D83CCDA120720E4B0069B397 /* Info.plist */,
+			);
+			path = XHTVAVPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		D83CCDA920720E4B0069B397 /* XHTVAVPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCDAA20720E4B0069B397 /* XHTVAVPlayerDemoUITests.m */,
+				D83CCDAC20720E4B0069B397 /* Info.plist */,
+			);
+			path = XHTVAVPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		D83CCDB820720EA40069B397 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCDB920720EA40069B397 /* SLNAppDelegateTool.m */,
+				D83CCDBB20720EA40069B397 /* SLNAppDelegateTool.h */,
+				D83CCDBA20720EA40069B397 /* Category */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D83CCDBA20720EA40069B397 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCE24207213810069B397 /* MBProgressHUD+NTVMBProgressHUD.h */,
+				D83CCE34207213820069B397 /* MBProgressHUD+NTVMBProgressHUD.m */,
+				D83CCE29207213810069B397 /* NSDate+SLDate.h */,
+				D83CCE2E207213820069B397 /* NSDate+SLDate.m */,
+				D83CCE2A207213810069B397 /* NSObject+LocalCache.h */,
+				D83CCE40207213840069B397 /* NSObject+LocalCache.m */,
+				D83CCE30207213820069B397 /* NSString+NTVString.h */,
+				D83CCE41207213840069B397 /* NSString+NTVString.m */,
+				D83CCE25207213810069B397 /* UIBarButtonItem+SLItem.h */,
+				D83CCE3C207213830069B397 /* UIBarButtonItem+SLItem.m */,
+				D83CCE2C207213820069B397 /* UICollectionView+NoNetworkCollectionView.h */,
+				D83CCE2D207213820069B397 /* UICollectionView+NoNetworkCollectionView.m */,
+				D83CCE32207213820069B397 /* UIColor+HexString.h */,
+				D83CCE31207213820069B397 /* UIColor+HexString.m */,
+				D83CCE28207213810069B397 /* UIImageView+NTVImageView.h */,
+				D83CCE42207213840069B397 /* UIImageView+NTVImageView.m */,
+				D83CCE44207213840069B397 /* UINavigationBar+NTVNavBar.h */,
+				D83CCE27207213810069B397 /* UINavigationBar+NTVNavBar.m */,
+				D83CCE36207213830069B397 /* UINavigationController+NTVNavAlpha.h */,
+				D83CCE43207213840069B397 /* UINavigationController+NTVNavAlpha.m */,
+				D83CCE37207213830069B397 /* UINavigationController+NTVNavigationVC.h */,
+				D83CCE3F207213840069B397 /* UINavigationController+NTVNavigationVC.m */,
+				D83CCE33207213820069B397 /* UITableView+NoNetworkTableView.h */,
+				D83CCE39207213830069B397 /* UITableView+NoNetworkTableView.m */,
+				D83CCE3B207213830069B397 /* UITableView+NTVTableView.h */,
+				D83CCE3E207213830069B397 /* UITableView+NTVTableView.m */,
+				D83CCE35207213830069B397 /* UITextField+NTVTextField.h */,
+				D83CCE2F207213820069B397 /* UITextField+NTVTextField.m */,
+				D83CCE26207213810069B397 /* UIView+Frame.h */,
+				D83CCE2B207213820069B397 /* UIView+Frame.m */,
+				D83CCE38207213830069B397 /* UIView+NTVView.h */,
+				D83CCE3A207213830069B397 /* UIView+NTVView.m */,
+				D83CCE3D207213830069B397 /* UIViewController+NTVViewController.h */,
+				D83CCE55207213FC0069B397 /* UIViewController+NTVViewController.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D83CCDBC20720EA40069B397 /* KRVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCDBD20720EA40069B397 /* KRVideoPlayerControlView.m */,
+				D83CCDBE20720EA40069B397 /* KRVideoPlayer.bundle */,
+				D83CCDBF20720EA40069B397 /* KRVideoPlayerController.h */,
+				D83CCDC020720EA40069B397 /* KRVideoPlayerControlView.h */,
+				D83CCDC120720EA40069B397 /* KRVideoPlayer.xcassets */,
+				D83CCDC220720EA40069B397 /* KRVideoPlayerController.m */,
+			);
+			path = KRVideoPlayer;
+			sourceTree = "<group>";
+		};
+		D83CCDC320720EA50069B397 /* CS */ = {
+			isa = PBXGroup;
+			children = (
+				D83CCDCB20720EA50069B397 /* ViewController.m */,
+				D83CCDD120720EA50069B397 /* ViewController.h */,
+				D83CCDCE20720EA50069B397 /* NTVNavigationController.h */,
+				D83CCDCD20720EA50069B397 /* NTVTabBarController.h */,
+				D83CCDC520720EA50069B397 /* NTVTabBarController.m */,
+				D83CCDC820720EA50069B397 /* NTVNavigationController.m */,
+				D83CCDC920720EA50069B397 /* NTVBaseViewController.h */,
+				D83CCDD220720EA50069B397 /* NTVBaseViewController.m */,
+				D83CCDCA20720EA50069B397 /* MainVCSettings.json */,
+				D83CCDCC20720EA50069B397 /* NTVMPMoviePlayerController.h */,
+				D83CCDC420720EA50069B397 /* NTVMPMoviePlayerController.m */,
+				D83CCDC720720EA50069B397 /* NTVAVPlayerViewController.h */,
+				D83CCDCF20720EA50069B397 /* NTVAVPlayerViewController.m */,
+				D83CCDD020720EA50069B397 /* NTVAVPlayerController.m */,
+				D83CCDC620720EA50069B397 /* NTVAVPlayerController.h */,
+			);
+			path = CS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D83CCD8220720E4B0069B397 /* XHTVAVPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83CCDAF20720E4B0069B397 /* Build configuration list for PBXNativeTarget "XHTVAVPlayerDemo" */;
+			buildPhases = (
+				F8E5F8A1A1361F36DCD10547 /* [CP] Check Pods Manifest.lock */,
+				D83CCD7F20720E4B0069B397 /* Sources */,
+				D83CCD8020720E4B0069B397 /* Frameworks */,
+				D83CCD8120720E4B0069B397 /* Resources */,
+				A100EAA679FBBAC8328FBD61 /* [CP] Embed Pods Frameworks */,
+				62595209FF581B9B0C4772EE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XHTVAVPlayerDemo;
+			productName = XHTVAVPlayerDemo;
+			productReference = D83CCD8320720E4B0069B397 /* XHTVAVPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D83CCD9A20720E4B0069B397 /* XHTVAVPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83CCDB220720E4B0069B397 /* Build configuration list for PBXNativeTarget "XHTVAVPlayerDemoTests" */;
+			buildPhases = (
+				D83CCD9720720E4B0069B397 /* Sources */,
+				D83CCD9820720E4B0069B397 /* Frameworks */,
+				D83CCD9920720E4B0069B397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83CCD9D20720E4B0069B397 /* PBXTargetDependency */,
+			);
+			name = XHTVAVPlayerDemoTests;
+			productName = XHTVAVPlayerDemoTests;
+			productReference = D83CCD9B20720E4B0069B397 /* XHTVAVPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D83CCDA520720E4B0069B397 /* XHTVAVPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83CCDB520720E4B0069B397 /* Build configuration list for PBXNativeTarget "XHTVAVPlayerDemoUITests" */;
+			buildPhases = (
+				D83CCDA220720E4B0069B397 /* Sources */,
+				D83CCDA320720E4B0069B397 /* Frameworks */,
+				D83CCDA420720E4B0069B397 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83CCDA820720E4B0069B397 /* PBXTargetDependency */,
+			);
+			name = XHTVAVPlayerDemoUITests;
+			productName = XHTVAVPlayerDemoUITests;
+			productReference = D83CCDA620720E4B0069B397 /* XHTVAVPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D83CCD7B20720E4B0069B397 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = XinHuaTV;
+				TargetAttributes = {
+					D83CCD8220720E4B0069B397 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					D83CCD9A20720E4B0069B397 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D83CCD8220720E4B0069B397;
+					};
+					D83CCDA520720E4B0069B397 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D83CCD8220720E4B0069B397;
+					};
+				};
+			};
+			buildConfigurationList = D83CCD7E20720E4B0069B397 /* Build configuration list for PBXProject "XHTVAVPlayerDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D83CCD7A20720E4B0069B397;
+			productRefGroup = D83CCD8420720E4B0069B397 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D83CCD8220720E4B0069B397 /* XHTVAVPlayerDemo */,
+				D83CCD9A20720E4B0069B397 /* XHTVAVPlayerDemoTests */,
+				D83CCDA520720E4B0069B397 /* XHTVAVPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83CCD8120720E4B0069B397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CCD9320720E4B0069B397 /* LaunchScreen.storyboard in Resources */,
+				D83CCDD520720EA50069B397 /* KRVideoPlayer.bundle in Resources */,
+				D83CCDDB20720EA50069B397 /* MainVCSettings.json in Resources */,
+				D83CCD9020720E4B0069B397 /* Assets.xcassets in Resources */,
+				D83CCDD620720EA50069B397 /* KRVideoPlayer.xcassets in Resources */,
+				D83CCD8E20720E4B0069B397 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CCD9920720E4B0069B397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CCDA420720E4B0069B397 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		62595209FF581B9B0C4772EE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHTVAVPlayerDemo/Pods-XHTVAVPlayerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A100EAA679FBBAC8328FBD61 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-XHTVAVPlayerDemo/Pods-XHTVAVPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8E5F8A1A1361F36DCD10547 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83CCD7F20720E4B0069B397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CCE56207213FD0069B397 /* UIViewController+NTVViewController.m in Sources */,
+				D83CCDD920720EA50069B397 /* NTVTabBarController.m in Sources */,
+				D83CCDDA20720EA50069B397 /* NTVNavigationController.m in Sources */,
+				D83CCE48207213840069B397 /* NSDate+SLDate.m in Sources */,
+				D83CCE54207213840069B397 /* UINavigationController+NTVNavAlpha.m in Sources */,
+				D83CCE4F207213840069B397 /* UITableView+NTVTableView.m in Sources */,
+				D83CCE49207213840069B397 /* UITextField+NTVTextField.m in Sources */,
+				D83CCE53207213840069B397 /* UIImageView+NTVImageView.m in Sources */,
+				D83CCE47207213840069B397 /* UICollectionView+NoNetworkCollectionView.m in Sources */,
+				D83CCE4C207213840069B397 /* UITableView+NoNetworkTableView.m in Sources */,
+				D83CCE46207213840069B397 /* UIView+Frame.m in Sources */,
+				D83CCDD720720EA50069B397 /* KRVideoPlayerController.m in Sources */,
+				D83CCDDC20720EA50069B397 /* ViewController.m in Sources */,
+				D83CCE4E207213840069B397 /* UIBarButtonItem+SLItem.m in Sources */,
+				D83CCE51207213840069B397 /* NSObject+LocalCache.m in Sources */,
+				D83CCD9620720E4B0069B397 /* main.m in Sources */,
+				D83CCDDE20720EA50069B397 /* NTVAVPlayerController.m in Sources */,
+				D83CCE4D207213840069B397 /* UIView+NTVView.m in Sources */,
+				D83CCE50207213840069B397 /* UINavigationController+NTVNavigationVC.m in Sources */,
+				D83CCDD320720EA50069B397 /* SLNAppDelegateTool.m in Sources */,
+				D83CCE52207213840069B397 /* NSString+NTVString.m in Sources */,
+				D83CCE4B207213840069B397 /* MBProgressHUD+NTVMBProgressHUD.m in Sources */,
+				D83CCDD420720EA50069B397 /* KRVideoPlayerControlView.m in Sources */,
+				D83CCDDF20720EA50069B397 /* NTVBaseViewController.m in Sources */,
+				D83CCE45207213840069B397 /* UINavigationBar+NTVNavBar.m in Sources */,
+				D83CCDDD20720EA50069B397 /* NTVAVPlayerViewController.m in Sources */,
+				D83CCE4A207213840069B397 /* UIColor+HexString.m in Sources */,
+				D83CCD8820720E4B0069B397 /* AppDelegate.m in Sources */,
+				D83CCDD820720EA50069B397 /* NTVMPMoviePlayerController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CCD9720720E4B0069B397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CCDA020720E4B0069B397 /* XHTVAVPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83CCDA220720E4B0069B397 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83CCDAB20720E4B0069B397 /* XHTVAVPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D83CCD9D20720E4B0069B397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83CCD8220720E4B0069B397 /* XHTVAVPlayerDemo */;
+			targetProxy = D83CCD9C20720E4B0069B397 /* PBXContainerItemProxy */;
+		};
+		D83CCDA820720E4B0069B397 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83CCD8220720E4B0069B397 /* XHTVAVPlayerDemo */;
+			targetProxy = D83CCDA720720E4B0069B397 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D83CCD8C20720E4B0069B397 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CCD8D20720E4B0069B397 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D83CCD9120720E4B0069B397 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83CCD9220720E4B0069B397 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D83CCDAD20720E4B0069B397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D83CCDAE20720E4B0069B397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D83CCDB020720E4B0069B397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17AA09078DF3AB2180CDF365 /* Pods-XHTVAVPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXRG394Q55;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XHTVAVPlayerDemo/XHTVAVPlayerDemo.pch";
+				INFOPLIST_FILE = XHTVAVPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhuashixun.XHTVAVPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D83CCDB120720E4B0069B397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A9B9407F07DB0A61405F4FA /* Pods-XHTVAVPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXRG394Q55;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/XHTVAVPlayerDemo/XHTVAVPlayerDemo.pch";
+				INFOPLIST_FILE = XHTVAVPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhuashixun.XHTVAVPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D83CCDB320720E4B0069B397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXRG394Q55;
+				INFOPLIST_FILE = XHTVAVPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhuashixun.XHTVAVPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XHTVAVPlayerDemo.app/XHTVAVPlayerDemo";
+			};
+			name = Debug;
+		};
+		D83CCDB420720E4B0069B397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXRG394Q55;
+				INFOPLIST_FILE = XHTVAVPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhuashixun.XHTVAVPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/XHTVAVPlayerDemo.app/XHTVAVPlayerDemo";
+			};
+			name = Release;
+		};
+		D83CCDB620720E4B0069B397 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXRG394Q55;
+				INFOPLIST_FILE = XHTVAVPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhuashixun.XHTVAVPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XHTVAVPlayerDemo;
+			};
+			name = Debug;
+		};
+		D83CCDB720720E4B0069B397 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SXRG394Q55;
+				INFOPLIST_FILE = XHTVAVPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.xinhuashixun.XHTVAVPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = XHTVAVPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83CCD7E20720E4B0069B397 /* Build configuration list for PBXProject "XHTVAVPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CCDAD20720E4B0069B397 /* Debug */,
+				D83CCDAE20720E4B0069B397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83CCDAF20720E4B0069B397 /* Build configuration list for PBXNativeTarget "XHTVAVPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CCDB020720E4B0069B397 /* Debug */,
+				D83CCDB120720E4B0069B397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83CCDB220720E4B0069B397 /* Build configuration list for PBXNativeTarget "XHTVAVPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CCDB320720E4B0069B397 /* Debug */,
+				D83CCDB420720E4B0069B397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83CCDB520720E4B0069B397 /* Build configuration list for PBXNativeTarget "XHTVAVPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83CCDB620720E4B0069B397 /* Debug */,
+				D83CCDB720720E4B0069B397 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D83CCD7B20720E4B0069B397 /* Project object */;
+}
