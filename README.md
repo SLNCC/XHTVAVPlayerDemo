@@ -1,0 +1,2 @@
+# XHTVAVPlayerDemo
+MPMoviePlayerController、AVPlayerController、AVPlayer简单使用
