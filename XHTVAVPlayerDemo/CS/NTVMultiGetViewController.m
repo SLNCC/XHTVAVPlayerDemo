@@ -158,8 +158,7 @@
                             //写数据到沙盒
                             [imgeData writeToFile:fullPath atomically:YES];
                             //移除下载图片任务操作
-                            [self.operations removeObjectForKey:app.icon];
-                            
+//                            [self.operations removeObjectForKey:app.icon];
                         }];
                         //添加操作到缓存操作中
                         [self.operations setObject:download forKey:app.icon];
