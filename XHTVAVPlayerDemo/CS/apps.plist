@@ -4,6 +4,14 @@
 <array>
 	<dict>
 		<key>name</key>
+		<string>秦时明月</string>
+		<key>icon</key>
+		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1523270193640&amp;di=fafc1a6fd63feb421ccc2a112cd4560e&amp;imgtype=jpg&amp;src=http%3A%2F%2Fimg0.imgtn.bdimg.com%2Fit%2Fu%3D20652275%2C3865321225%26fm%3D214%26gp%3D0.jpg</string>
+		<key>download</key>
+		<string>5</string>
+	</dict>
+	<dict>
+		<key>name</key>
 		<string>大司命</string>
 		<key>icon</key>
 		<string>https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1523248212666&amp;di=0bd227bab80f2fa13ecd3a6076050f24&amp;imgtype=0&amp;src=http%3A%2F%2Fi2.hdslb.com%2Fbfs%2Farchive%2Ff1858a0d59484c9c047a7172ac0ef13f1d16d158.jpg</string>

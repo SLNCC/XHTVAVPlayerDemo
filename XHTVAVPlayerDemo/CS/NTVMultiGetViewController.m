@@ -135,11 +135,30 @@
                     }else{
                         //清空cell原来的图片
                         cell.imageView.image = [UIImage imageNamed:@"icon_player_refresh"];
+                        DLog(@"%@",download)
                         download = [NSBlockOperation blockOperationWithBlock:^{
                             NSURL *url = [NSURL URLWithString:app.icon];
                             NSData *data = [NSData dataWithContentsOfURL:url];
-                            UIImage *image = [UIImage imageWithData:data];
+//                            UIImage *image = [UIImage imageWithData:data];
                             NSLog(@"%zd",indexPath.row);
+                            
+
+                            //渐进式下载
+                            //增量映像是一个以块创建的映像，类似于在web上看到的大型图像被一块一块加载的方式。
+                            UIImage *image;
+                            //UIImage *thumbImage;
+                            //1.创建为空的增量式图片资源对象
+                            CGImageSourceRef _incrementallyImgSource  = CGImageSourceCreateIncremental(NULL);
+                            //2).指定图片流
+                            NSMutableData   *_recieveData = data.mutableCopy;
+                            //3).调用增量数据的函数
+                            CGImageSourceUpdateData(_incrementallyImgSource, (CFDataRef)_recieveData, YES);
+                            //4).取图片类型：CGImage
+                            CGImageRef imageRef = CGImageSourceCreateImageAtIndex(_incrementallyImgSource, 0, NULL);
+                            //5).转化成 UIImage
+                            image = [UIImage imageWithCGImage:imageRef];
+                            //6).释放图片资源的对象
+                            CGImageRelease(imageRef);
                             
                             //容错处理
                             if (image == nil) {
