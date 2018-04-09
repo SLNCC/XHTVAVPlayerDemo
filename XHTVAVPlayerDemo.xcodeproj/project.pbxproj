@@ -44,6 +44,8 @@
 		D83CCE53207213840069B397 /* UIImageView+NTVImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE42207213840069B397 /* UIImageView+NTVImageView.m */; };
 		D83CCE54207213840069B397 /* UINavigationController+NTVNavAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE43207213840069B397 /* UINavigationController+NTVNavAlpha.m */; };
 		D83CCE56207213FD0069B397 /* UIViewController+NTVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D83CCE55207213FC0069B397 /* UIViewController+NTVViewController.m */; };
+		D879DB0E2079AAF50048EA2C /* NTVMultiGetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D879DB0D2079AAF50048EA2C /* NTVMultiGetViewController.m */; };
+		D879DB102079ACEA0048EA2C /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = D879DB0F2079ACEA0048EA2C /* apps.plist */; };
 		DE19BCC9FABCAEEB645302DB /* libPods-XHTVAVPlayerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 44D823031A188C246D77FE23 /* libPods-XHTVAVPlayerDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -140,6 +142,9 @@
 		D83CCE43207213840069B397 /* UINavigationController+NTVNavAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+NTVNavAlpha.m"; sourceTree = "<group>"; };
 		D83CCE44207213840069B397 /* UINavigationBar+NTVNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+NTVNavBar.h"; sourceTree = "<group>"; };
 		D83CCE55207213FC0069B397 /* UIViewController+NTVViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+NTVViewController.m"; sourceTree = "<group>"; };
+		D879DB0C2079AAF50048EA2C /* NTVMultiGetViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTVMultiGetViewController.h; sourceTree = "<group>"; };
+		D879DB0D2079AAF50048EA2C /* NTVMultiGetViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NTVMultiGetViewController.m; sourceTree = "<group>"; };
+		D879DB0F2079ACEA0048EA2C /* apps.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,8 +328,11 @@
 				D83CCDC420720EA50069B397 /* NTVMPMoviePlayerController.m */,
 				D83CCDC720720EA50069B397 /* NTVAVPlayerViewController.h */,
 				D83CCDCF20720EA50069B397 /* NTVAVPlayerViewController.m */,
-				D83CCDD020720EA50069B397 /* NTVAVPlayerController.m */,
 				D83CCDC620720EA50069B397 /* NTVAVPlayerController.h */,
+				D83CCDD020720EA50069B397 /* NTVAVPlayerController.m */,
+				D879DB0C2079AAF50048EA2C /* NTVMultiGetViewController.h */,
+				D879DB0D2079AAF50048EA2C /* NTVMultiGetViewController.m */,
+				D879DB0F2079ACEA0048EA2C /* apps.plist */,
 			);
 			path = CS;
 			sourceTree = "<group>";
@@ -444,6 +452,7 @@
 				D83CCD9020720E4B0069B397 /* Assets.xcassets in Resources */,
 				D83CCDD620720EA50069B397 /* KRVideoPlayer.xcassets in Resources */,
 				D83CCD8E20720E4B0069B397 /* Main.storyboard in Resources */,
+				D879DB102079ACEA0048EA2C /* apps.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -520,6 +529,7 @@
 				D83CCDD920720EA50069B397 /* NTVTabBarController.m in Sources */,
 				D83CCDDA20720EA50069B397 /* NTVNavigationController.m in Sources */,
 				D83CCE48207213840069B397 /* NSDate+SLDate.m in Sources */,
+				D879DB0E2079AAF50048EA2C /* NTVMultiGetViewController.m in Sources */,
 				D83CCE54207213840069B397 /* UINavigationController+NTVNavAlpha.m in Sources */,
 				D83CCE4F207213840069B397 /* UITableView+NTVTableView.m in Sources */,
 				D83CCE49207213840069B397 /* UITextField+NTVTextField.m in Sources */,

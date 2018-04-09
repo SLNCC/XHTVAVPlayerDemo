@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "SLNAppDelegateTool.h"
 #import "NTVTabBarController.h"
+#import "NTVMultiGetViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-        [SLNAppDelegateTool slnChooseRootController:[[NTVTabBarController alloc]init] ];
+//        [SLNAppDelegateTool slnChooseRootController:[[NTVTabBarController alloc]init] ];
+            [SLNAppDelegateTool slnChooseRootController:[[NTVMultiGetViewController alloc]init] ];
     return YES;
 }
 

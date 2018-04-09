@@ -42,7 +42,7 @@ static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
     NSString *videoString =
 //    @"http://fastwebcache.yod.cn/yanglan/2013suoluosi/2013suoluosi_850/2013suoluosi_850.m3u8";
     @"http://live.hkstv.hk.lxdns.com/live/hks/playlist.m3u8";
-//    videoString = @"http://111.13.171.164/storage/7-0/1-1/260000/44779-179600-257693.mp4";
+    videoString = @"http://111.13.171.164/storage/7-0/1-1/260000/44779-179600-257693.mp4";
     NSURL *playUrl = [NSURL URLWithString:videoString];
     self.playerItem = [AVPlayerItem playerItemWithURL:playUrl];
     //播放
@@ -198,14 +198,33 @@ static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
 }
 - (void)playerPlaybackStalled:(NSNotification *)noti{
     DLog(@"%@",noti.object);
-   
     DLog(@"%@", _playerItem.error);
     DLog(@"%ld", _playerItem.error.code);
     DLog(@"%@", _player.error);
     DLog(@"%ld", _player.error.code);
     DLog(@"playerPlaybackStalled")
-    [self.videoControl.indicatorView stopAnimating];
-    [self pauseButtonClick];
+    AVPlayerItem *playerItem = noti.object;
+    DLog(@"%f",CMTimeGetSeconds(playerItem.currentTime));
+    [self.videoControl.indicatorView startAnimating];
+    float currentTime = CMTimeGetSeconds(playerItem.currentTime);
+    float totalTime = CMTimeGetSeconds(self.playerItem.duration);
+    [self setTimeLabelValues:currentTime totalTime:totalTime];
+    CMTime time = CMTimeMakeWithSeconds(currentTime, _fps);
+    if(currentTime == 0.0){
+        [_player seekToTime:kCMTimeZero];
+        [self playButtonClick];
+    }else{
+        __weak typeof (self) WeakSelf = self;
+        [_player seekToTime:time  toleranceBefore:kCMTimeZero toleranceAfter:kCMTimeZero  completionHandler:^(BOOL finished) {
+            DLog(@"呵呵")
+            if(WeakSelf.playerItem .status == AVPlayerItemStatusReadyToPlay){
+                [WeakSelf playButtonClick];
+                [WeakSelf.videoControl autoFadeOutControlBar];
+            }else{
+                DLog(@"错误")
+            }
+        }];
+    }
 }
 //播放完毕
 - (void)playerMovieFinish:(NSNotification *)noti{
@@ -333,6 +352,8 @@ static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
     if (self.isFullscreenMode) {
         return;
     }
+    self.isFullscreenMode = YES;
+    self.isStatusBarMode = !self.isFullscreenMode;
     self.originControlFrame = self.videoControl.frame;
     CGFloat height = [[UIScreen mainScreen] bounds].size.width;
     CGFloat width = [[UIScreen mainScreen] bounds].size.height;
@@ -342,8 +363,6 @@ static const CGFloat kVideoPlayerControllerAnimationTimeInterval = 0.3f;
         self.frame = frame;
         [self.view setTransform:CGAffineTransformMakeRotation(M_PI_2)];
     } completion:^(BOOL finished) {
-        self.isFullscreenMode = YES;
-        self.isStatusBarMode = !self.isFullscreenMode;
         self.videoControl.fullScreenButton.hidden = YES;
         self.videoControl.shrinkScreenButton.hidden = NO;
     }];
